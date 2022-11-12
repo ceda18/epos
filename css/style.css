@@ -2,12 +2,7 @@
 
 *{ 
     font-family: 'Poppins', sans-serif;
-}
-
-
-body{
-    margin-top: 70px;
-    padding: 20px;
+    
 }
 
 /* HEADER */
@@ -21,7 +16,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;  
-    box-shadow: 0 0 50px 20px rgba(131, 131, 131, 0.369);
+    box-shadow: 0 0 60px 10px rgba(107, 106, 106, 0.369);
 }
 
 header * {
@@ -53,7 +48,7 @@ header li a:hover{
 }
 
 #infoButton {
-    padding: 5px 20px;
+    padding: 10px 30px;
     margin-left: auto;
     margin-right: 70px;
     /* border */
@@ -73,6 +68,40 @@ header li a:hover{
     color:  rgba(255, 255, 255, 0.781);
 }
 
+
+/* BODY */
+
+body{
+    margin-top: 70px;
+    padding: 20px;
+    
+}
+
+#homepage {
+    /* text */
+    text-align: right;
+    /* pozadina */
+    background-image: url(/img/main/background.jpg);
+    background-color: rgb(0, 0, 0);
+    background-blend-mode:luminosity;
+    background-size: 2000px;
+    background-position:left;
+    /* font */
+    color: white;
+}
+
+#tourPage {
+    /* text */
+    text-align: left;
+    /* pozadina */
+    background-image: url(/img/tour/background.webp);
+    background-color: rgba(8, 8, 48, 0.71);
+    background-blend-mode:darken;
+    background-size: 1920px;
+    background-position:top;
+    /* font */
+    color: white;
+}
 
 
 
