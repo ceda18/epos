@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
 
 *{ 
     font-family: 'Poppins', sans-serif;
 }
 
+
 body{
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 20px;
 }
+
+/* HEADER */
 
 header {
     background-color: rgb(229, 229, 229);
@@ -14,7 +18,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;  
     box-shadow: 0 0 50px 20px rgba(131, 131, 131, 0.369);
@@ -24,8 +28,9 @@ header * {
     display: inline; 
 }
 
+
 header img {
-    margin: 10px;
+    margin: 20px;
     margin-left: 30px;
     height: 30px;
 }
@@ -38,7 +43,38 @@ header li a {
     text-decoration: none;
     font-weight: bold;
     color: rgb(24, 24, 24);
+    /* hover */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
+
+header li a:hover{
+    color: rgba(24, 24, 24, 0.5);
+}
+
+#infoButton {
+    padding: 5px 20px;
+    margin-left: auto;
+    margin-right: 70px;
+    /* border */
+    border-radius: 20px;
+    border: none;
+    /* normalno */
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.781);
+    background-color: rgb(18, 18, 18);
+    /* hover */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#infoButton:hover {
+    background-color: rgba(24, 24, 24, 0.5);
+    color:  rgba(255, 255, 255, 0.781);
+}
+
+
+
 
 
 
