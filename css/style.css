@@ -73,21 +73,53 @@ header li a:hover{
 
 body{
     margin-top: 70px;
-    padding: 20px;
-    
+    background-color: rgb(0, 0, 0);
 }
 
 #homepage {
     /* text */
     text-align: right;
+    /* font */
+    color: white;
+    /* grid layout */ 
+    /* fr je fraction */
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr; 
+    grid-template-rows: 540px, 540px, 540px, 540px, 540px, 540px; 
+
+}
+
+#home-section1{
+    /* positioning */
+    width: 100vw;
+    height: 100vh;
     /* pozadina */
     background-image: url(/img/main/background.jpg);
     background-color: rgb(0, 0, 0);
     background-blend-mode:luminosity;
-    background-size: 2000px;
+    background-size: 1920px;
     background-position:left;
-    /* font */
-    color: white;
+}
+
+#home-container1a{
+     /* positioning */
+     width: 100vw;
+     height: 100vh;
+}
+
+#home-section2 div {
+    align-content: center;
+    padding: 10px;
+    border: 10px white;
+}
+
+#home-catchphrase {
+    font-size: 100px;
+    padding-top: 80px;
+    padding-right: 90px;
+    margin-top: 0px;
+
+
 }
 
 #tourPage {
