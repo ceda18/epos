@@ -21,3 +21,18 @@ class CustomZaglavlje extends HTMLElement {
 }
 
 customElements.define('custom-zaglavlje', CustomZaglavlje);
+
+class CustomFooter extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML = `
+
+        <footer>
+            <p>EPOS</p>
+            <p>© 2022 Novembar</p>
+            <p>by Čeda, Đorđe & Irina</p>
+        </footer>
+        `
+    }
+}
+
+customElements.define('custom-footer', CustomFooter);

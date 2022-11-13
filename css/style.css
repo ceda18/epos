@@ -9,13 +9,15 @@
 
 header {
     background-color: rgb(229, 229, 229);
+    /* pozicija */
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100vw;
     height: 70px;
+    /* elementi */
     display: flex;
     align-items: center;  
+    /* senka */
     box-shadow: 0 0 60px 10px rgba(107, 106, 106, 0.369);
 }
 
@@ -72,65 +74,140 @@ header li a:hover{
 /* BODY */
 
 body{
-    margin-top: 70px;
+    margin: 0px;
     background-color: rgb(0, 0, 0);
 }
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.5);
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer * {
+    font-size: 0.8rem;
+    padding: 5hw;
+}
+
+/* HOME */
 
 #homepage {
     /* text */
     text-align: right;
     /* font */
     color: white;
-    /* grid layout */ 
-    /* fr je fraction */
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr; 
-    grid-template-rows: 540px, 540px, 540px, 540px, 540px, 540px; 
-
 }
 
+/* section 1 */
 #home-section1{
     /* positioning */
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+
     /* pozadina */
-    background-image: url(/img/main/background.jpg);
+    background-image: url(/img/main/background.png);
+    background-size: cover;
+    background-position:bottom left;
     background-color: rgb(0, 0, 0);
     background-blend-mode:luminosity;
-    background-size: 1920px;
-    background-position:left;
 }
 
 #home-container1a{
      /* positioning */
+     display: inline-block;
+     justify-content:space-between;
+     text-shadow: 0px 0px 10px #ffffff72;
      width: 100vw;
-     height: 100vh;
-}
-
-#home-section2 div {
-    align-content: center;
-    padding: 10px;
-    border: 10px white;
+     height: 50vh;
 }
 
 #home-catchphrase {
-    font-size: 100px;
-    padding-top: 80px;
-    padding-right: 90px;
-    margin-top: 0px;
+    font-size: 10vh;
+    padding: 10vh 10vw;
+}
 
+/* section 2 */
+
+#home-section2 {
+    width: 100vw;
+}
+
+#home-section2 div {
+    text-align: left;
+    color: #ffffffe7;
+    text-shadow: 2px 2px 20px #1d1d1dd1;
+
+    width: 100vw;
+    min-height: 540px;
+}
+
+.home-predstavljanje {
+    /* responzivnost */
+    background-size: cover;
+    background-position: center top;
+}
+
+.home-predstavljanje h1{
+    margin: 0;
+    padding-top: 20vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 3rem;
+    text-shadow: 0px 0px 10px #ffffffbe;
+}
+
+.home-predstavljanje p{
+    margin: 0;
+    max-width: 40ch;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
 
 }
 
-#tourPage {
+#home-andjelija {
+    background-image: url(/img/main/andjelija.jpg);
+}
+
+#home-branko {
+    background-image: url(/img/main/branko.jpg);
+    background-position: right top;
+}
+
+
+#home-bojan {
+    background-image: url(/img/main/bojan.jpg);
+    background-position: left top;
+}
+
+#home-anastasija {
+    background-image: url(/img/main/anastasija.jpg);
+}
+
+
+#tour-section1 {
+
+    height: 85vh;
+    width: 100vw;
+    background-position:top;
+    background-size: cover;
     /* text */
     text-align: left;
     /* pozadina */
     background-image: url(/img/tour/background.webp);
     background-color: rgba(8, 8, 48, 0.71);
+
     background-blend-mode:darken;
-    background-size: 1920px;
-    background-position:top;
     /* font */
     color: white;
 }
