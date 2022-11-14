@@ -272,9 +272,7 @@ footer * {
     min-height: 50vh;
 }
 
-.proizvod:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.07);
-}
+
 .proizvod:nth-child(even){
     background-color: rgba(0, 0, 0, 0.032);
 }
@@ -290,6 +288,12 @@ footer * {
     /* boje */
     background-color: #afafaf1a;
     box-shadow: 5px 5px 30px 10px #5151511a;
+    transform: all 0.3s ease 0s;
+}
+
+.proizvod-okvi:hover {
+    max-height: 95%;
+    height: 95%;
 }
 
 .proizvod-okvir * {
@@ -297,7 +301,7 @@ footer * {
 }
 
 .proizvod-slika{
-    height: 70px;
+    height: 75px;
 }
 
 
