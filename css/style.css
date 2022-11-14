@@ -146,7 +146,7 @@ footer * {
 #home-section2 div {
     text-align: left;
     color: #ffffffe7;
-    text-shadow: 2px 2px 20px #1d1d1dd1;
+    text-shadow: 2px 2px 15px #1d1d1ddc;
 
     width: 100vw;
     min-height: 540px;
@@ -183,7 +183,6 @@ footer * {
     background-position: right top;
 }
 
-
 #home-bojan {
     background-image: url(/img/main/bojan.jpg);
     background-position: left top;
@@ -191,6 +190,55 @@ footer * {
 
 #home-anastasija {
     background-image: url(/img/main/anastasija.jpg);
+}
+
+#shopPage {
+    background-color: white;
+    color: rgb(30, 30, 30);
+}
+
+#shop-landing {
+    height: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shop-landing-wrapper h1, p{
+    text-align: center;
+}
+
+#shop-landing-wrapper h1 {
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+#shop-landing-wrapper p {
+    margin-top: 5vh;
+    color: #00000066;
+}
+
+#shop-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+}
+
+#shop-shopping-cart {
+    position: absolute;
+    /* flip */
+    transform: scaleX(-1) rotate(5deg); 
+    top: 10vh;
+    left: 30vw;
+}
+
+#shop-shopping-bags {
+    position: absolute;
+    transform: rotate(5deg);
+    top: 72vh;
+    left: 50vw;
 }
 
 
