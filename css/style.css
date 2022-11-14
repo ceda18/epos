@@ -205,7 +205,35 @@ footer * {
     justify-content: center;
 }
 
-#shop-landing-wrapper h1, p{
+#shop-landing-wrapper {
+    margin-top: -5vh;
+}
+
+#shop-shopping-cart {
+    /* center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* flip */
+    transform: scaleX(-1);
+    height: 15vh;
+    margin-bottom: 5vh;
+    transition: all 0.3s ease 0s;
+}
+
+#shop-shopping-cart:hover{
+    transform: scaleX(-1) rotate(5deg);
+}
+
+
+#shop-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+}
+
+#shop-landing-wrapper h1, #shop-landing-wrapper p{
     text-align: center;
 }
 
@@ -219,27 +247,36 @@ footer * {
     color: #00000066;
 }
 
-#shop-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 10vh;
-}
-
-#shop-shopping-cart {
-    position: absolute;
-    /* flip */
-    transform: scaleX(-1) rotate(5deg); 
-    top: 10vh;
-    left: 30vw;
-}
-
-#shop-shopping-bags {
+/* #shop-shopping-bags {
     position: absolute;
     transform: rotate(5deg);
     top: 72vh;
     left: 50vw;
+} */
+
+#shop-glavna-sekcija {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 9fr 0.5fr;
 }
+
+#shop-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#shop-grid-wrapper div{
+    min-height: 50vh;
+}
+
+.proizvod:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.proizvod:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.032);
+}
+
 
 
 #tour-section1 {
