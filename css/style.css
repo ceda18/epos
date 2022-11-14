@@ -260,7 +260,7 @@ footer * {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 0.5fr 9fr 0.5fr;
-    position: relative;
+
 }
 
 #shop-grid-wrapper {
@@ -273,10 +273,6 @@ footer * {
 }
 
 
-.proizvod:nth-child(even){
-    background-color: rgba(0, 0, 0, 0.032);
-}
-
 .proizvod-okvir {
     /* pozicija */
     margin: 10%;
@@ -286,24 +282,52 @@ footer * {
     border-radius: 40px;
     border: none;
     /* boje */
-    background-color: #afafaf1a;
-    box-shadow: 5px 5px 30px 10px #5151511a;
+    color: #000000cc;
+    background-color: #ffffff97;
+    box-shadow: 5px 5px 30px 10px #c6c6c641;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-
 }
 
 .proizvod-okvir:hover {
     background-color: #dc9609d1;
-    color: rgba(255, 255, 255, 0.431);
+    color: rgba(255, 255, 255, 0.58);
 }
 
 .proizvod-okvir * {
-    margin-left: 5%;
+    margin-left: 10%;
+}
+
+.proizvod-ime {
+    margin: 0px;
+    padding-top: 10%;
+    margin-bottom: 5%;
+
+    text-align: center;
+    font-size: 2em;
 }
 
 .proizvod-slika{
-    height: 75px;
+    /* pozicija */
+    display: block;
+    margin: auto;
+    position: static;
+    height: 20vh;
+
+    /* border */
+    border-radius: 10%;
+    border: none;
+}
+
+.proizvod-opis{
+    padding-top: 5%;
+    padding-right: 5%;
+    max-width: 75ch;
+}
+
+.proizvod-cena{
+    padding-bottom: 10%;
+    font-size: 1.5em;
 }
 
 
