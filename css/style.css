@@ -83,7 +83,7 @@ footer{
     /* stil */
     background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 0.751);
-    box-shadow: 0 0 60px 15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.25);
     /* pozicija */
     bottom: 0;
     left: 0;
@@ -263,7 +263,7 @@ footer * {
 
 #shop-grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #shop-grid-wrapper div{
@@ -277,6 +277,16 @@ footer * {
     background-color: rgba(0, 0, 0, 0.032);
 }
 
+.proizvod-okvir {
+    background-color: #00000066;
+    padding: 10%;
+    width: 90%;
+    max-height: 90%;
+}
+
+.proizvod-slika{
+    height: 70px;
+}
 
 
 #tour-section1 {
