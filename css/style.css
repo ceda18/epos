@@ -337,7 +337,12 @@ footer * {
 }
 
 #shop-kupovina-section1-podaci{
-    min-height: 50vh;
+    min-height: 100vh;
+}
+
+#kupovina-forma{
+    margin-top: 30vh;
+    margin-left: 30vh;
 }
 
 
