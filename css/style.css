@@ -279,10 +279,20 @@ footer * {
 }
 
 .proizvod-okvir {
-    background-color: #00000066;
-    padding: 10%;
-    width: 90%;
+    /* pozicija */
+    margin: 10%;
+    max-width: 90%;
     max-height: 90%;
+    /* okvir */
+    border-radius: 40px;
+    border: none;
+    /* boje */
+    background-color: #afafaf1a;
+    box-shadow: 5px 5px 30px 10px #5151511a;
+}
+
+.proizvod-okvir * {
+    margin-left: 5%;
 }
 
 .proizvod-slika{
