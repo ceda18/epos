@@ -274,8 +274,7 @@ footer * {
 
 #shop-grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #shop-grid-wrapper div{
@@ -324,6 +323,12 @@ footer * {
     /* border */
     border-radius: 10%;
     border: none;
+
+    transition: all 0.3s ease 0s;
+}
+
+.proizvod-slika:hover{
+    transform: rotate(-5deg);
 }
 
 .proizvod-opis{

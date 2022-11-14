@@ -36,3 +36,14 @@ class CustomFooter extends HTMLElement {
 }
 
 customElements.define('custom-footer', CustomFooter);
+
+// RESPONZIVNOST
+function reponzivnostMob(){
+    document.getElementById("shop-grid-wrapper").style.gridTemplateColumns = "1fr";
+}
+function responzivnostTablet(){
+    document.getElementById("shop-grid-wrapper").style.gridTemplateColumns = "1fr 1fr";
+}
+function responzivnostKomp(){
+    document.getElementById("shop-grid-wrapper").style.gridTemplateColumns = "1fr 1fr 1fr";
+}
