@@ -194,11 +194,12 @@ footer * {
 }
 
 #shopPage {
-    background-color: white;
+    background-color: black;
     color: rgb(30, 30, 30);
 }
 
 #shop-landing {
+    background-color: white;
     height: 100vw;
     height: 100vh;
     display: flex;
@@ -256,51 +257,57 @@ footer * {
 } */
 
 #shop-glavna-sekcija {
+    /* pozadina */
+    background-image: url(/img/shop/background.jpeg);
+    background-color: #593906a5;
+    background-blend-mode:color-burn;
+    box-shadow: -1px 0px 50px 30px #00000025;
+    /* size */
     width: 100vw;
     min-height: 100vh;
+    /* grid */
     display: grid;
-    grid-template-columns: 0.5fr 9fr 0.5fr;
+    grid-template-columns: 1fr 10fr 1fr;
+
 
 }
 
 #shop-grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 #shop-grid-wrapper div{
     min-height: 50vh;
-}
 
+}
 
 .proizvod-okvir {
     /* pozicija */
     margin: 10%;
-    max-width: 90%;
-    max-height: 90%;
     /* okvir */
     border-radius: 40px;
     border: none;
     /* boje */
     color: #000000cc;
-    background-color: #ffffff97;
-    box-shadow: 5px 5px 30px 10px #c6c6c641;
+    background-color: #fffffff9;
+    box-shadow: 5px 5px 30px 10px #212121d1;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 .proizvod-okvir:hover {
-    background-color: #dc9609d1;
-    color: rgba(255, 255, 255, 0.58);
+    background-color: #dc9609;
+    color: rgba(255, 255, 255, 0.596);
 }
 
-.proizvod-okvir * {
-    margin-left: 10%;
-}
 
 .proizvod-ime {
     margin: 0px;
     padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-bottom: 5%;
 
     text-align: center;
@@ -322,12 +329,81 @@ footer * {
 .proizvod-opis{
     padding-top: 5%;
     padding-right: 5%;
-    max-width: 75ch;
+    padding-left: 10%;
+    max-width: 70ch;
+    color: #00000060;
 }
 
 .proizvod-cena{
     padding-bottom: 10%;
+    padding-left: 10%;
     font-size: 1.5em;
+}
+
+#shop-formaSector{
+    background-color: white;
+    width: 100vw;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#shop-formaSector-wrapper {
+    padding: 0 10vw;
+}
+
+#shop-formaSector-wrapper img {
+    transition: all 0.3s ease 0s;
+}
+
+#shop-formaSector-wrapper img:hover {
+    transform: rotate(-5deg);
+}
+
+#shop-formaSector-wrapper h1{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#shop-formaSector-wrapper p{
+    color: #00000073;
+    padding-bottom: 2vh;
+    max-width: 70ch;
+}
+
+#shop-formaSector-wrapper button{
+    font-size: 2vh;
+    border-radius: 40px;
+    border: none;
+    height: 5vh;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#shop-formaSector-wrapper button:first-child{
+    background-color: #222222;
+    color: #ffffffad;
+    font-weight: 700;
+    width: 50vw;
+}
+
+#shop-formaSector-wrapper button:nth-child(2){
+    background-color: #e7e7e7;
+    color:#00000086;
+    width: 20vw;
+    margin-left: 1vw;
+}
+
+#shop-formaSector-wrapper button:hover{
+    background-color: #dc9609;
+    color: #ffffff93;
+}
+
+#shop-formaSector-kupovinaButton {
+
 }
 
 
