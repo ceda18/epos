@@ -288,12 +288,14 @@ footer * {
     /* boje */
     background-color: #afafaf1a;
     box-shadow: 5px 5px 30px 10px #5151511a;
-    transform: all 0.3s ease 0s;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
 }
 
-.proizvod-okvi:hover {
-    max-height: 95%;
-    height: 95%;
+.proizvod-okvir:hover {
+    background-color: #dc9609d1;
+    color: rgba(255, 255, 255, 0.431);
 }
 
 .proizvod-okvir * {
