@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;  
 }
 
+
 /* HEADER */
 
 header {
@@ -69,6 +70,9 @@ header li a:hover{
     color:  rgba(255, 255, 255, 0.781);
 }
 
+#infoButton:hover + #contact-info {
+    display: flex;
+}
 
 /* BODY */
 
@@ -86,11 +90,9 @@ footer{
     box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.25);
     /* pozicija */
     bottom: 0;
-    left: 0;
-    right: 0;
     width: 100vw;
     height: 5vh;
-    /* elementi */
+    /* layout */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -99,6 +101,104 @@ footer{
 footer * {
     font-size: 0.8rem;
     padding: 5hw;
+}
+
+#contact-info {
+    /* pozicija */
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+
+    /* color */
+    background-color: #ffffff;
+    color: #000000c3;
+    box-shadow: 0px 0px 500px 100px #00000038;
+    /* size and border */
+    border: none;
+    border-radius: 30px;
+    min-width: 300px;
+    min-height: 70vh;
+    /* position */
+}
+
+@media (min-height: 1000px) {
+    #contact-info {
+        width: 450px;
+    }
+    #contact-info img {
+        padding: 10% 1%;
+    }
+}
+
+@media (min-width: 850px) {
+    #contact-info {
+        width: 600px;
+    }
+    #contact-info img {
+        padding: 0% 5%;
+    }
+    #contact-info h2 {
+        padding: 0% 5%;
+    }
+}
+
+.contact-info{
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s, top 0.4s;
+    visibility: hidden;
+}
+
+.open-contact-info {
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#contact-info-wrapper{
+    text-align: center;
+    padding: 10%;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 10%;
+}
+
+#contact-info img {
+    height: 8vh;
+}
+
+#contact-info img:hover {
+    transform: rotate(-5deg);
+}
+
+#contact-info h2 {
+    font-size: 1em;
+    text-align: left;
+    padding-left: 10%;
+}
+
+#contact-info button{
+    background-color: #dddddda2;
+    color: #46464682;
+    font-size: 0.8em;
+    font-weight: 600;
+
+    border-radius: 20px;
+    border: none;
+    height: 5vh;
+    margin-top: 20%;
+    padding: 7% 15%;
+
+    cursor: pointer;
+}
+#contact-info button:hover{
+    background-color: #49A9EE;
+    color: #ffffffa7;
 }
 
 /* HOME */
@@ -166,6 +266,12 @@ footer * {
     padding-right: 10vw;
 }
 
+@media (min-width: 820px) {
+    #home-andjelija h1, #home-andjelija p, #home-bojan h1, #home-bojan p{
+        margin-left:50vw;
+    }
+}
+
 .home-predstavljanje h1{
     padding-top: 20vh;
     font-size: 3rem;
@@ -194,7 +300,7 @@ footer * {
 }
 
 #shopPage {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: rgb(30, 30, 30);
 }
 
@@ -216,15 +322,14 @@ footer * {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* flip */
-    transform: scaleX(-1);
+    /* size */
     height: 15vh;
     margin-bottom: 5vh;
     transition: all 0.3s ease 0s;
 }
 
 #shop-shopping-cart:hover{
-    transform: scaleX(-1) rotate(5deg);
+    transform: rotate(-5deg);
 }
 
 
@@ -245,16 +350,11 @@ footer * {
 }
 
 #shop-landing-wrapper p {
+    font-size: 1.25em;
     margin-top: 5vh;
     color: #00000066;
 }
 
-/* #shop-shopping-bags {
-    position: absolute;
-    transform: rotate(5deg);
-    top: 72vh;
-    left: 50vw;
-} */
 
 #shop-glavna-sekcija {
     /* pozadina */
@@ -274,7 +374,19 @@ footer * {
 
 #shop-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 850px) {
+    #shop-grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    #shop-grid-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 #shop-grid-wrapper div{
@@ -300,7 +412,6 @@ footer * {
     background-color: #dc9609;
     color: rgba(255, 255, 255, 0.596);
 }
-
 
 .proizvod-ime {
     margin: 0px;
@@ -406,11 +517,6 @@ footer * {
     background-color: #dc9609;
     color: #ffffff93;
 }
-
-#shop-formaSector-kupovinaButton {
-
-}
-
 
 #tour-section1 {
 
