@@ -18,18 +18,49 @@
     <section id="shop-kupovina-section1">
         <div id="shop-kupovina-section1-podaci">
             <form id="kupovina-forma" action="">
-                <label>Ime:</label>
-                <input type="text">
-                <label>Prezime:</label>
-                <input type="text">
-                <br>
-                <label>E-mail:</label>
-                <input type="text">
-                <br>
-                <label>Broj Telefona:</label>
-                <input type="text">
-                <br>
-
+                <div>
+                    <label for="form-firstName">Ime: </label>
+                    <input type="text" name="form-firstName" id="form-firstName" placeholder="Unesite svoje ime...">
+                </div>
+                <div>
+                    <label for="form-lastName">Prezime: </label>
+                    <input type="text" name="form-lastName" id="form-lastName" placeholder="Unesite svoje prezime...">
+                </div>
+                <div>
+                    <label for="form-email">E-mail adresa: </label>
+                    <input type="email" name="form-email" id="form-email" placeholder="Unesite svoju e-mail adresu...">
+                </div>
+                <div>
+                    <label for="form-phoneNumber">Broj telefona: </label>
+                    <input type="tel" name="form-phoneNumber" id="form-phoneNumber" placeholder="Unesite svoj broj telefona...">
+                </div>
+                <div>
+                    <label for="form-adress">Adresa: </label>
+                    <input type="text" name="form-adress" id="form-adress" placeholder="Unesite svoju adresu...">
+                </div>
+                <div>
+                    <label for="form-city">Grad: </label>
+                    <select name="form-city" id="form-city">
+                        <option value="beograd">Beograd</option>
+                        <option value="novi sad">Novi Sad</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="form-postalCode">Poštanski broj: </label>
+                    <input type="number" name="form-postalCode" id="form-postalCode" min="11000" max="39000" placeholder="Unesite svoj poštanski broj...">
+                </div>
+                <div>
+                    <label for="form-payement">Odaberite način plaćanja: </label>
+                    <select name="form-payement" id="form-payement">
+                        <option value="keš">Keš</option>
+                        <optgroup label="Kartica">
+                            <option value="viza">Viza</option>
+                            <option value="masterCard">MasterCard</option>
+                            <option value="dina">Dina</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button type="submit">Naruči</button>
             </form>
         </div>
         <p></p>
