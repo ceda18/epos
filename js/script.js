@@ -2,12 +2,12 @@ class CustomZaglavlje extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 
-        <header>
+        <img id="burger-icon" class="burgerMenu" src="/img/header/burger-closed.png" alt="burger menu button" onclick="openMenu()">
+        
 
-        <img id="burger" class="burgerMenu" src="/img/header/burger-closed.png" alt="burger menu button" onclick="openMenu()">
-
-        <img id="x-icon" class="burgerMenu" src="/img/header/burger-opened.png" alt="burger menu button" onclick="closeMenu()">
-
+        <header id="header">
+        
+            <img id="x-icon" class="burgerMenu" src="/img/header/burger-opened.png" alt="burger menu button" onclick="closeMenu()">
             <a href="./index.html"><img id="menuLogo" src="img/header/ABBA_logo_net.png" alt="ABBA logo"></a>
 
             <div class="menuBar">
@@ -80,6 +80,20 @@ function openPopupInfo(){
 function closePopupInfo(){
     document.getElementById("contact-info").classList.remove("open-contact-info");
 }
+
+function openMenu(){
+    document.getElementById("burger-icon").classList.add("close-burger");
+    document.getElementById("x-icon").classList.add("open-x-icon");
+    document.getElementById("header").classList.add("open-header");
+}
+
+function closeMenu(){
+    document.getElementById("burger-icon").classList.remove("close-burger");
+    document.getElementById("x-icon").classList.remove("open-x-icon");
+    document.getElementById("header").classList.remove("open-header");
+}
+
+
 
 
 
