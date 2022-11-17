@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.png">
+
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <title>Kupovina</title>
 </head>
@@ -17,7 +19,18 @@
 
     <section id="shop-kupovina-section1">
         <div id="shop-kupovina-section1-podaci">
-            <form id="kupovina-forma" action="">
+            <form id="kupovina-forma">
+                <div id="form-sekcija-kupovina">
+                    <select name="form-proizvod" id="form-proizvod">
+                        <option value="golden ploča">Golden Ploča</option>
+                        <option value="abba voyage">ABBA Voyage</option>
+                        <option value="šolja">Šolja</option>
+                        <option value="duks">Duks</option>
+                        <option value="božićni duks">Božićni Duks</option>
+                        <option value="božićne čarape">Božićne Čarape</option>
+                        <option value="meda">Meda</option>
+                    </select>
+                </div>
                 <div>
                     <label for="form-firstName">Ime: </label>
                     <input type="text" name="form-firstName" id="form-firstName" placeholder="Unesite svoje ime...">
@@ -41,6 +54,16 @@
                     <select name="form-city" id="form-city">
                         <option value="beograd">Beograd</option>
                         <option value="novi sad">Novi Sad</option>
+                        <option value="niš">Niš</option>
+                        <option value="vranje">Vranje</option>
+                        <option value="kladovo">Kladovo</option>
+                        <option value="subotica">Subotica</option>
+                        <option value="kragujevac">Kragujevac</option>
+                        <option value="kraljevo">Kraljevo</option>
+                        <option value="kruševac">Kruševac</option>
+                        <option value="paraćin">Paraćin</option>
+                        <option value="ćuprija">Ćuprija</option>
+                        <option value="sombor">Sombor</option>
                     </select>
                 </div>
                 <div>
@@ -65,6 +88,8 @@
     </section>
     
     <custom-footer></custom-footer> 
+
+   <script src="js/jqueryScript.js"></script>
 
 </body>
 </html>

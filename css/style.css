@@ -608,5 +608,10 @@ footer * {
     margin-left: 30vh;
 }
 
+#form-sekcija-kupovina {
+    margin-bottom: 30vh;
+}
 
-
+#form-proizvod {
+    border: 0;
+}
