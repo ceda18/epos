@@ -3,7 +3,12 @@ class CustomZaglavlje extends HTMLElement {
         this.innerHTML = `
 
         <header>
-            <a href="./index.html"><img src="img/header/ABBA_logo_net.png" alt="ABBA logo"></a>
+
+        <img id="burger" class="burgerMenu" src="/img/header/burger-closed.png" alt="burger menu button" onclick="openMenu()">
+
+        <img id="x-icon" class="burgerMenu" src="/img/header/burger-opened.png" alt="burger menu button" onclick="closeMenu()">
+
+            <a href="./index.html"><img id="menuLogo" src="img/header/ABBA_logo_net.png" alt="ABBA logo"></a>
 
             <div class="menuBar">
                 <ul>
@@ -75,4 +80,7 @@ function openPopupInfo(){
 function closePopupInfo(){
     document.getElementById("contact-info").classList.remove("open-contact-info");
 }
+
+
+
 

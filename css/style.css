@@ -26,7 +26,7 @@ header * {
 }
 
 
-header img {
+#menuLogo {
     margin: 20px;
     margin-left: 30px;
     height: 30px;
@@ -72,6 +72,58 @@ header li a:hover{
 
 #infoButton:hover + #contact-info {
     display: flex;
+}
+
+.burgerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2vh 2vh;
+    cursor: pointer;
+}
+
+.menuOpened{
+    visibility: hidden;
+}
+
+
+@media (max-width: 850px) {
+
+    #burger{
+        visibility: visible;
+    }
+
+    header{
+        /* display: none;  */
+        flex-direction: column;
+        width: 60vw;
+        height: 100vh;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        font-size: 3.5vh;
+    }
+
+    #menuLogo{
+        margin: 0;
+        height: 5vh;
+    }
+
+    #infoButton {
+        margin: 0;
+        bottom: 0;
+        font-size: 1.5em;
+        border-radius: 30px;
+    }
+
 }
 
 /* BODY */
