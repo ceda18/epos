@@ -589,6 +589,103 @@ footer * {
     color: #ffffff93;
 }
 
+#disco-landing{
+    background-image: url(/img/disco/discoball.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    color: #fffffff6;
+    text-shadow: -5px 10px 30px #000000cd;
+}
+
+#disco-main {
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 600vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+@media (max-width: 850px) {
+    #disco-main{
+        height: 300vh;
+    }
+}
+
+.disco-timeline {
+    background-image: url(/img/disco/timeline.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.prviTimeline {
+    background-image: url(/img/disco/timeline1.png);
+}
+
+.disco-year {
+    display:flex;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
+.disco-year img {
+    width: 4vh;
+    margin-left: 15.5vw;
+}
+
+.disco-year h1{
+    font-size: 4vw;
+    color: white;
+    margin-left: 3vh;
+    padding-right: 2vh;
+}
+
+.disco-coverContainer {
+    display: flex;
+    align-items: center;
+}
+
+.disco-cover-front{
+    position: relative;
+    z-index: 3;
+    width: 35vw;
+    cursor: pointer;
+    box-shadow: 0px 0px 300px 10px rgba(119, 100, 55, 0.405);
+    overflow: hidden;
+
+}
+
+.disco-cover-songs{
+    position: absolute;
+    z-index: 2;
+    width: 35vw;
+    cursor: pointer;
+    box-shadow: 0px 0px 300px 10px rgba(119, 100, 55, 0.405);
+    overflow: hidden;
+
+}
+
+.disco-cover-disc{
+    position: absolute;
+    z-index: 0;
+    width: 32vw;
+    overflow: hidden;
+
+}
+
+
 #tour-section1 {
 
     height: 85vh;
