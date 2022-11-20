@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.png">
 
-    <script src="js/script.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <title>Kupovina</title>
@@ -19,69 +19,82 @@
 
     <section id="shop-kupovina-section1">
         <div id="shop-kupovina-section1-podaci">
-            <form id="kupovina-forma">
-                <div id="form-sekcija-kupovina">
-                    <select name="form-proizvod" id="form-proizvod">
-                        <option value="golden ploča">Golden Ploča</option>
-                        <option value="abba voyage">ABBA Voyage</option>
-                        <option value="šolja">Šolja</option>
-                        <option value="duks">Duks</option>
-                        <option value="božićni duks">Božićni Duks</option>
-                        <option value="božićne čarape">Božićne Čarape</option>
-                        <option value="meda">Meda</option>
-                    </select>
+            <form id="forma">
+                <hr>
+                <div id="kupovina-forma-gore">
+                    <div id="form-sekcija-kupovina">
+                        <select name="form-proizvod" id="form-proizvod">
+                            <option value="golden ploča">Golden Ploča</option>
+                            <option value="abba voyage">ABBA Voyage</option>
+                            <option value="šolja">Šolja</option>
+                            <option value="duks">Duks</option>
+                            <option value="božićni duks">Božićni Duks</option>
+                            <option value="božićne čarape">Božićne Čarape</option>
+                            <option value="meda">Meda</option>
+                        </select>
+                        <input type="number" name="form-kolicina" id="form-kolicina" min="1" max="100" placeholder="Kolicina">
+                    </div>
                 </div>
-                <div>
-                    <label for="form-firstName">Ime: </label>
-                    <input type="text" name="form-firstName" id="form-firstName" placeholder="Unesite svoje ime...">
-                    <label for="form-lastName">Prezime: </label>
-                    <input type="text" name="form-lastName" id="form-lastName" placeholder="Unesite svoje prezime...">
+                <hr>
+                <div id="kupovina-forma-dole">
+                    <div class="forma-donjiElementi">
+                        <label for="form-firstName">Ime: </label>
+                        <input type="text" name="form-firstName" id="form-firstName" placeholder="Unesite svoje ime...">
+                        <label for="form-lastName">Prezime: </label>
+                        <input type="text" name="form-lastName" id="form-lastName" placeholder="Unesite svoje prezime...">
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label for="form-email">E-mail adresa: </label>
+                        <input type="email" name="form-email" id="form-email" placeholder="Unesite svoju e-mail adresu...">
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label for="form-phoneNumber">Broj telefona: </label>
+                        <input type="tel" name="form-phoneNumber" id="form-phoneNumber" placeholder="Unesite svoj broj telefona...">
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label for="form-adress">Adresa: </label>
+                        <input type="text" name="form-adress" id="form-adress" placeholder="Unesite svoju adresu...">
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label for="form-city">Grad: </label>
+                        <select name="form-city" id="form-city">
+                            <option value="beograd">Beograd</option>
+                            <option value="novi sad">Novi Sad</option>
+                            <option value="niš">Niš</option>
+                            <option value="vranje">Vranje</option>
+                            <option value="kladovo">Kladovo</option>
+                            <option value="subotica">Subotica</option>
+                            <option value="kragujevac">Kragujevac</option>
+                            <option value="kraljevo">Kraljevo</option>
+                            <option value="kruševac">Kruševac</option>
+                            <option value="paraćin">Paraćin</option>
+                            <option value="ćuprija">Ćuprija</option>
+                            <option value="sombor">Sombor</option>
+                        </select>
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label for="form-postalCode">Poštanski broj: </label>
+                        <input type="number" name="form-postalCode" id="form-postalCode" min="11000" max="39000" placeholder="Unesite svoj poštanski broj...">
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label for="form-payement">Odaberite način plaćanja: </label>
+                        <select name="form-payement" id="form-payement">
+                            <option value="keš">Keš</option>
+                            <optgroup label="Kartica">
+                                <option value="viza">Viza</option>
+                                <option value="masterCard">MasterCard</option>
+                                <option value="dina">Dina</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="forma-donjiElementi">
+                        <label>Jedna Rata</label>
+                        <input type="radio" name="form-brojRata" id="jednaRata" value="Jedna Rata" checked>
+                        <label>Dve Rate</label>
+                        <input type="radio" name="form-brojRata" id="dveRate" value="Dve Rate">
+                    </div>
+                    <button type="submit" id="forma-submit">Poruči</button>
                 </div>
-                <div>
-                    <label for="form-email">E-mail adresa: </label>
-                    <input type="email" name="form-email" id="form-email" placeholder="Unesite svoju e-mail adresu...">
-                </div>
-                <div>
-                    <label for="form-phoneNumber">Broj telefona: </label>
-                    <input type="tel" name="form-phoneNumber" id="form-phoneNumber" placeholder="Unesite svoj broj telefona...">
-                </div>
-                <div>
-                    <label for="form-adress">Adresa: </label>
-                    <input type="text" name="form-adress" id="form-adress" placeholder="Unesite svoju adresu...">
-                </div>
-                <div>
-                    <label for="form-city">Grad: </label>
-                    <select name="form-city" id="form-city">
-                        <option value="beograd">Beograd</option>
-                        <option value="novi sad">Novi Sad</option>
-                        <option value="niš">Niš</option>
-                        <option value="vranje">Vranje</option>
-                        <option value="kladovo">Kladovo</option>
-                        <option value="subotica">Subotica</option>
-                        <option value="kragujevac">Kragujevac</option>
-                        <option value="kraljevo">Kraljevo</option>
-                        <option value="kruševac">Kruševac</option>
-                        <option value="paraćin">Paraćin</option>
-                        <option value="ćuprija">Ćuprija</option>
-                        <option value="sombor">Sombor</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="form-postalCode">Poštanski broj: </label>
-                    <input type="number" name="form-postalCode" id="form-postalCode" min="11000" max="39000" placeholder="Unesite svoj poštanski broj...">
-                </div>
-                <div>
-                    <label for="form-payement">Odaberite način plaćanja: </label>
-                    <select name="form-payement" id="form-payement">
-                        <option value="keš">Keš</option>
-                        <optgroup label="Kartica">
-                            <option value="viza">Viza</option>
-                            <option value="masterCard">MasterCard</option>
-                            <option value="dina">Dina</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <button type="submit">Naruči</button>
             </form>
         </div>
         <p></p>
@@ -90,6 +103,6 @@
     <custom-footer></custom-footer> 
 
    <script src="js/jqueryScript.js"></script>
-
+   <script src="js/script.js"></script>
 </body>
 </html>
