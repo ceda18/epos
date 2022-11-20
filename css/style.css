@@ -782,3 +782,9 @@ hr{
 #jednaRata {
     margin-right: 1vw;
 }
+
+#tour-text{
+    margin-top: 10vh;
+    text-shadow: 2px 0px black;
+    text-align: center;
+}
