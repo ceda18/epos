@@ -737,16 +737,23 @@ hr{
     width: 100vw;
 }
 
-#form-sekcija-kupovina {
+#kupovinaPage {
+    font-size: 1em;
 }
+
 
 #form-proizvod {
     border: 0;
     margin-right: 10vw;
+    height: 5vh;
+
 }
+
+
 
 #form-kolicina {
     border: 0;
+    width: 10vw;
 }
 
 .forma-donjiElementi{
@@ -784,7 +791,7 @@ hr{
 }
 
 #tour-text{
-    margin-top: 10vh;
+    padding-top: 10vh;
     text-shadow: 2px 0px black;
     text-align: center;
 }
