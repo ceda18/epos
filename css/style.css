@@ -733,6 +733,15 @@ footer * {
     margin-left: 20vh;
 }
 
+@media (max-width: 850px) {
+    #kupovina-forma-gore{
+        margin-left: 5vh;
+    }
+    #kupovina-forma-dole{
+        margin-left: 5vh;
+    }
+}
+
 hr{
     width: 100vw;
 }
@@ -790,8 +799,14 @@ hr{
     margin-right: 1vw;
 }
 
+#tour-section1 {
+    display: flex;
+    justify-content: center;
+}
+
 #tour-text{
+    max-width: 75ch;
     padding-top: 10vh;
-    text-shadow: 2px 0px black;
+    text-shadow: 2px 0px 10px 10px black;
     text-align: center;
 }
