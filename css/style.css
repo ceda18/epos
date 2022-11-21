@@ -806,9 +806,18 @@ hr{
 
 #tour-text{
     max-width: 75ch;
-    padding-top: 10vh;
+    padding-top: 20vh;
     text-shadow: 2px 0px 10px 10px black;
     text-align: center;
+}
+
+#timer{
+    font-size: 2em;
+}
+
+#days{
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 @media (max-width: 850px) {
