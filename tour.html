@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.png">
-    <script src="js/script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <title>ABBA | Turneja</title>
 </head>
@@ -17,13 +18,18 @@
     
     <section id="tour-section1">
         <div id="tour-text">
-            <p>Mešanje najnovije tehnologije, spektakularno osvetljenje, neke od najvoljenijih napisanih pesama, ABBA stupa na scenu  na skorz novi način. 
-                U novoj areni, jedna od najpopularnijih grupa u istoriji se pojavljuju kao digitalni avatari u inovativnom (metro) koncertu koji bas mora da se vidi da poveruje.</p>
+            <div id="timer">
+                <div id="days"></div>
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+              </div>
         </div>
     </section>
     
     <custom-footer></custom-footer>
 
-
+    <script src="js/script.js"></script>
+    <script src="js/jqueryScript.js"></script>
 </body>
 </html>

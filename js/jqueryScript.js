@@ -21,3 +21,15 @@ $('.disco-cover-songs').click(function(){
 	
 })
 
+/*document.addEventListener("DOMContentLoaded", () => {
+    window.setInterval(function () {
+      var d = new Date();
+      let sati = d.getHours();
+      let minuti = d.getMinutes();
+      let sekunde = d.getSeconds();
+	  let dan = d.getDay
+	  let mesec = d.getMonth();
+	  let godina = d.getFullYear();
+      $("#tour-date").text(dan + '/' + mesec + '/' + godina);
+    }, 1000);
+  });*/
