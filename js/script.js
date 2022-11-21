@@ -107,8 +107,10 @@ $("#forma-submit").click(function (e) {
     let brojRata = $('input[name="form-brojRata"]:checked').val();
 
     if(notValid(ime) || notValid(prezime) || notValid(adresa)){
-        alert("Pogresan unos...");
+        alert("Pogrešan unos...");
     } else {
+        var audio = new Audio('/sounds/mONEY.mp3');
+        audio.play();
         let output = "Proizvod: " + proizvod + "\nKoličina: " + kolicina + "\nIme i prezime: " + ime + prezime + "\nE-mail adresa: " + email + "\nAdresa stanovanja: " + adresa + "\nBroj telefona: " + telefon + "\nGrad: " + grad + "\nPoštanski broj: " + postanskiBroj + "\nNacin plaćanja: " + nacinPlacanja + "\nBroj rata: " + brojRata;
         alert(output);
     }
@@ -121,6 +123,4 @@ function notValid(value) {
       value === null
     );
   }
-
-
 
