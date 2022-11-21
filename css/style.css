@@ -733,20 +733,36 @@ footer * {
     margin-left: 20vh;
 }
 
+@media (max-width: 850px) {
+    #kupovina-forma-gore{
+        margin-left: 5vh;
+    }
+    #kupovina-forma-dole{
+        margin-left: 5vh;
+    }
+}
+
 hr{
     width: 100vw;
 }
 
-#form-sekcija-kupovina {
+#kupovinaPage {
+    font-size: 1em;
 }
+
 
 #form-proizvod {
     border: 0;
     margin-right: 10vw;
+    height: 5vh;
+
 }
+
+
 
 #form-kolicina {
     border: 0;
+    width: 10vw;
 }
 
 .forma-donjiElementi{
@@ -783,9 +799,15 @@ hr{
     margin-right: 1vw;
 }
 
+#tour-section1 {
+    display: flex;
+    justify-content: center;
+}
+
 #tour-text{
-    margin-top: 10vh;
-    text-shadow: 2px 0px black;
+    max-width: 75ch;
+    padding-top: 10vh;
+    text-shadow: 2px 0px 10px 10px black;
     text-align: center;
 }
 
