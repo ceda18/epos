@@ -810,3 +810,10 @@ hr{
     text-shadow: 2px 0px 10px 10px black;
     text-align: center;
 }
+
+@media (max-width: 850px) {
+    #tour-text{
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+}
